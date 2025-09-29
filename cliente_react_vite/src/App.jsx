@@ -21,6 +21,7 @@ function App() {
       <h1>Actividad grupal</h1>
 
       <div>
+        <h2>Usuarios</h2>
         <UserCard 
             name="Ana García" 
             email="ana.garcia@email.com" 
@@ -51,6 +52,7 @@ function App() {
       />
 
       <div>
+        <h2>Productos</h2>
         <Producto 
           nombre="Mouse Inalámbrico" 
           precio={50} 
