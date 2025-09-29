@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import './MisComponentes.css'
 import UserCard from './UserCard'
 
 function App() {
@@ -31,16 +32,16 @@ function App() {
       </p>
       <div>
         <UserCard 
-            user="Ana García" 
+            name="Ana García" 
             email="ana.garcia@email.com" 
-            edad={25} 
-            estado={true} 
+            age={25} 
+            isOnline={true} 
           />
         <UserCard 
-            user="Carlos López" 
+            name="Carlos López" 
             email="carlos.lopez@email.com" 
-            edad={30} 
-            estado={false} 
+            age={30} 
+            isOnline={false} 
           />
       </div>
 

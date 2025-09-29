@@ -1,10 +1,15 @@
-function UserCard({ user, email, edad, estado }) {
+import "./MisComponentes.css";
+
+function UserCard({ name, email, age, isOnline }) {
+  const statusClass = isOnline ? "online" : "offline";
   return (
     <div className="user-card">
-      <h2>{user}</h2>
-        <p>Email: {email}</p>
-        <p>Edad: {edad}</p>
-        <p>Estado: {estado}</p>
+      <div className="user-header">
+        <span className={statusClass}>●</span>
+        <h2>{name}</h2>
+      </div>
+      <p>Email: {email}</p>
+      <p>Edad: {age}</p>
     </div>
   );
 }
