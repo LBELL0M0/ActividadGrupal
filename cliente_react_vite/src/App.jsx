@@ -3,7 +3,9 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import './MisComponentes.css'
 import UserCard from './UserCard'
+import UserProfile from './UserProfile'
 import Producto from './Producto'
+
 
 function App() {
   return (
@@ -32,6 +34,22 @@ function App() {
             isOnline={false} 
           />
       </div>
+
+      <h2>Perfiles</h2>
+      <UserProfile
+        user={{ name: "Ana Garcia", email: "ana.garcia@email.com", phone: "+44 1234 5678" }}
+        showEmail={true}
+        showPhone={false}
+        layout="horizontal"
+      />
+
+      <UserProfile
+        user={{ name: "Carlos López", email: "carlos.lopez@email.com", phone: "+44 9999 0000" }}
+        showEmail={false}
+        showPhone={true}
+        layout="vertical"
+      />
+
       <div>
         <Producto 
           nombre="Mouse Inalámbrico" 
